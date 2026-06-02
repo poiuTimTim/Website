@@ -98,3 +98,826 @@
 
     .eyebrow {
       display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #fff;
+      color: var(--brand-dark);
+      font-size: 13px;
+      font-weight: 750;
+    }
+
+    .pulse {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #22c55e;
+      box-shadow: 0 0 0 6px rgba(34, 197, 94, 0.15);
+    }
+
+    h1 {
+      margin: 0;
+      max-width: 680px;
+      font-size: clamp(42px, 6vw, 74px);
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+
+    h1 .line {
+      display: block;
+      white-space: nowrap;
+    }
+
+    .lead {
+      max-width: 640px;
+      margin: 22px 0 0;
+      color: var(--muted);
+      font-size: clamp(17px, 2vw, 20px);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 12px 18px;
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--ink);
+      font-weight: 800;
+      transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 24px rgba(18, 45, 31, 0.11);
+    }
+
+    .button.primary {
+      border-color: var(--brand);
+      background: var(--brand);
+      color: #fff;
+    }
+
+    .proof-row {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 34px;
+      max-width: 620px;
+    }
+
+    .proof {
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.78);
+    }
+
+    .proof strong {
+      display: block;
+      font-size: 22px;
+      line-height: 1;
+    }
+
+    .proof span {
+      display: block;
+      margin-top: 7px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .product-preview {
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: #fff;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .preview-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 750;
+    }
+
+    .dots {
+      display: flex;
+      gap: 6px;
+    }
+
+    .dots span {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--line);
+    }
+
+    .preview-body {
+      padding: 18px;
+    }
+
+    .canvas-demo {
+      position: relative;
+      height: 286px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      overflow: hidden;
+      background:
+        linear-gradient(#edf2ee 1px, transparent 1px),
+        linear-gradient(90deg, #edf2ee 1px, transparent 1px),
+        #fff;
+      background-size: 32px 32px;
+    }
+
+    .canvas-demo svg {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    .metric-strip {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .metric {
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--surface-soft);
+    }
+
+    .metric b {
+      display: block;
+      font-size: 20px;
+      line-height: 1;
+    }
+
+    .metric span {
+      display: block;
+      margin-top: 7px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 650;
+    }
+
+    main {
+      padding-bottom: 72px;
+    }
+
+    section {
+      padding: 74px clamp(20px, 5vw, 72px);
+    }
+
+    .section-head {
+      max-width: 760px;
+      margin-bottom: 30px;
+    }
+
+    .section-kicker {
+      color: var(--brand);
+      font-size: 13px;
+      font-weight: 850;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      margin: 8px 0 0;
+      font-size: clamp(28px, 4vw, 44px);
+      line-height: 1.16;
+      letter-spacing: 0;
+    }
+
+    .section-copy {
+      margin: 12px 0 0;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .brief-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .brief-card {
+      padding: 26px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+    }
+
+    .brief-card h3 {
+      margin: 0 0 10px;
+      font-size: 23px;
+      line-height: 1.25;
+    }
+
+    .brief-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .card {
+      min-height: 218px;
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--surface);
+    }
+
+    .card-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: var(--radius);
+      display: grid;
+      place-items: center;
+      margin-bottom: 18px;
+      background: var(--surface-soft);
+      color: var(--brand-dark);
+      font-size: 22px;
+    }
+
+    .card h3 {
+      margin: 0;
+      font-size: 19px;
+      line-height: 1.3;
+    }
+
+    .card p {
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .flow {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      counter-reset: step;
+    }
+
+    .step {
+      position: relative;
+      min-height: 184px;
+      padding: 22px;
+      border-radius: var(--radius);
+      background: var(--ink);
+      color: #fff;
+      overflow: hidden;
+    }
+
+    .step::before {
+      counter-increment: step;
+      content: "0" counter(step);
+      display: block;
+      margin-bottom: 36px;
+      color: rgba(255, 255, 255, 0.55);
+      font-weight: 900;
+      font-size: 14px;
+      letter-spacing: 0.08em;
+    }
+
+    .step h3 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    .step p {
+      margin: 8px 0 0;
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 15px;
+    }
+
+    .report-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 0.95fr) minmax(320px, 1.05fr);
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .report-card {
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+    }
+
+    .report-card h3 {
+      margin: 0 0 14px;
+      font-size: 22px;
+    }
+
+    .report-card ul {
+      display: grid;
+      gap: 12px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .report-card li {
+      display: flex;
+      gap: 10px;
+      color: var(--muted);
+    }
+
+    .check {
+      width: 22px;
+      height: 22px;
+      flex: 0 0 22px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: var(--surface-soft);
+      color: var(--brand);
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .analysis-demo {
+      display: grid;
+      gap: 10px;
+    }
+
+    .comparison {
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+    }
+
+    table {
+      width: 100%;
+      min-width: 740px;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 16px 18px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      color: var(--brand-dark);
+      background: var(--surface-soft);
+      font-size: 14px;
+    }
+
+    td {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    td strong {
+      color: var(--ink);
+    }
+
+    .analysis-row {
+      display: grid;
+      grid-template-columns: 90px 1fr 46px;
+      gap: 10px;
+      align-items: center;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .bar {
+      height: 8px;
+      border-radius: 999px;
+      background: var(--surface-soft);
+      overflow: hidden;
+    }
+
+    .bar span {
+      display: block;
+      height: 100%;
+      border-radius: inherit;
+      background: var(--brand);
+    }
+
+    .audience-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .audience {
+      padding: 24px;
+      border-left: 5px solid var(--brand);
+      border-radius: var(--radius);
+      background: #fff;
+      box-shadow: 0 14px 32px rgba(18, 45, 31, 0.07);
+    }
+
+    .audience h3 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    .audience p {
+      margin: 10px 0 0;
+      color: var(--muted);
+    }
+
+    .cta {
+      margin: 0 clamp(20px, 5vw, 72px);
+      padding: clamp(30px, 5vw, 52px);
+      border-radius: 18px;
+      background: var(--brand-dark);
+      color: #fff;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 24px;
+      align-items: center;
+    }
+
+    .cta h2 {
+      margin: 0;
+      color: #fff;
+    }
+
+    .cta p {
+      margin: 10px 0 0;
+      color: rgba(255, 255, 255, 0.78);
+      max-width: 720px;
+    }
+
+    .cta .button {
+      border-color: rgba(255, 255, 255, 0.28);
+      background: #fff;
+      color: var(--brand-dark);
+    }
+
+    footer {
+      padding: 34px clamp(20px, 5vw, 72px);
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 980px) {
+      .hero,
+      .brief-grid,
+      .report-layout,
+      .cta {
+        grid-template-columns: 1fr;
+      }
+
+      .feature-grid,
+      .flow {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .product-preview {
+        max-width: 720px;
+      }
+    }
+
+    @media (max-width: 680px) {
+      .topbar {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .nav {
+        width: 100%;
+        overflow-x: auto;
+        padding-bottom: 2px;
+      }
+
+      .hero {
+        padding-top: 34px;
+      }
+
+      .proof-row,
+      .metric-strip,
+      .feature-grid,
+      .brief-grid,
+      .flow,
+      .audience-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .canvas-demo {
+        height: 230px;
+      }
+
+      .card,
+      .brief-card,
+      .step {
+        min-height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="觸控筆分析首頁">
+      <span class="brand-mark">筆</span>
+      <span>觸控筆分析</span>
+    </a>
+    <nav class="nav" aria-label="主要導覽">
+      <a href="#features">功能</a>
+      <a href="#brief">重點</a>
+      <a href="#flow">流程</a>
+      <a href="#report">報告</a>
+      <a href="#comparison">比較</a>
+      <a href="#usecases">應用</a>
+      <a href="#references">參考</a>
+      <a href="app.html">進入作品</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div>
+        <div class="eyebrow"><span class="pulse"></span>即時擷取書寫軌跡與筆壓</div>
+        <h1 id="hero-title"><span class="line">觸控筆數據</span><span class="line">分析網站</span></h1>
+        <p class="lead">
+          這是一個把「手寫」轉成可觀察資料的互動網站。使用者在畫布上寫字後，系統會記錄筆壓、速度、傾斜角度與筆畫軌跡，並產出文字辨識、筆順提醒、情緒推算與資料匯出，幫助中文學習者更具體地看見自己的書寫過程。
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="app.html">直接進入作品網站</a>
+          <a class="button" href="#brief">查看簡報重點</a>
+        </div>
+        <div class="proof-row" aria-label="網站重點數據">
+          <div class="proof"><strong>5+</strong><span>書寫數據指標</span></div>
+          <div class="proof"><strong>AI</strong><span>手寫內容辨識</span></div>
+          <div class="proof"><strong>CSV</strong><span>可下載分析資料</span></div>
+        </div>
+      </div>
+
+      <div class="product-preview" aria-label="觸控筆分析網站畫面預覽">
+        <div class="preview-bar">
+          <span>書寫畫布 / 數據擷取系統</span>
+          <div class="dots" aria-hidden="true"><span></span><span></span><span></span></div>
+        </div>
+        <div class="preview-body">
+          <div class="canvas-demo" aria-label="手寫軌跡示意">
+            <svg viewBox="0 0 620 286" role="img" aria-label="以黃字示範觸控筆書寫軌跡與筆壓變化">
+              <text x="310" y="226" text-anchor="middle" font-size="214" font-weight="900" fill="#fef3c7" stroke="#f59e0b" stroke-width="2">黃</text>
+              <path d="M226 76 C270 64 332 62 380 75" fill="none" stroke="#17231c" stroke-width="11" stroke-linecap="round"/>
+              <path d="M250 106 C291 96 344 96 382 108" fill="none" stroke="#17231c" stroke-width="12" stroke-linecap="round"/>
+              <path d="M276 59 C268 103 264 148 265 209" fill="none" stroke="#17231c" stroke-width="10" stroke-linecap="round"/>
+              <path d="M346 59 C336 104 333 151 333 210" fill="none" stroke="#17231c" stroke-width="10" stroke-linecap="round"/>
+              <path d="M232 154 C278 142 344 142 390 154" fill="none" stroke="#17231c" stroke-width="13" stroke-linecap="round"/>
+              <path d="M255 191 C301 181 350 182 377 194" fill="none" stroke="#17231c" stroke-width="11" stroke-linecap="round"/>
+              <path d="M285 224 C267 243 247 255 223 263" fill="none" stroke="#17231c" stroke-width="10" stroke-linecap="round"/>
+              <path d="M339 224 C360 242 383 254 407 262" fill="none" stroke="#17231c" stroke-width="10" stroke-linecap="round"/>
+              <circle cx="226" cy="76" r="14" fill="#dc2626"/>
+              <circle cx="250" cy="106" r="13" fill="#dc2626"/>
+              <circle cx="276" cy="59" r="13" fill="#dc2626"/>
+              <circle cx="346" cy="59" r="13" fill="#dc2626"/>
+              <circle cx="232" cy="154" r="13" fill="#dc2626"/>
+              <text x="226" y="81" text-anchor="middle" font-size="13" font-weight="800" fill="#fff">1</text>
+              <text x="250" y="111" text-anchor="middle" font-size="13" font-weight="800" fill="#fff">2</text>
+              <text x="276" y="64" text-anchor="middle" font-size="13" font-weight="800" fill="#fff">3</text>
+              <text x="346" y="64" text-anchor="middle" font-size="13" font-weight="800" fill="#fff">4</text>
+              <text x="232" y="159" text-anchor="middle" font-size="13" font-weight="800" fill="#fff">5</text>
+            </svg>
+          </div>
+          <div class="metric-strip">
+            <div class="metric"><b>184</b><span>數據點</span></div>
+            <div class="metric"><b>0.43</b><span>平均筆壓</span></div>
+            <div class="metric"><b>71%</b><span>平靜指標</span></div>
+            <div class="metric"><b>黃</b><span>示範字</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" aria-labelledby="features-title">
+      <div class="section-head">
+        <div class="section-kicker">Core Features</div>
+        <h2 id="features-title">從一筆一畫看見書寫背後的訊號</h2>
+        <p class="section-copy">網站不只是讓使用者寫字，而是把書寫過程拆成可分析、可重播、可保存的資料。</p>
+      </div>
+      <div class="feature-grid">
+        <article class="card">
+          <div class="card-icon">✍</div>
+          <h3>即時書寫擷取</h3>
+          <p>支援觸控筆與滑鼠，記錄每個點的位置、時間、筆壓、傾斜角度與輸入裝置類型。</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">🧠</div>
+          <h3>AI 文字辨識</h3>
+          <p>將手寫圖像送入視覺模型，辨識內容並產生字義、情境與書寫意圖分析。</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">✓</div>
+          <h3>筆順檢查提醒</h3>
+          <p>依照繁體中文字筆順標準檢查書寫順序，錯誤時顯示正確動畫示範。</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">↻</div>
+          <h3>軌跡動態重播</h3>
+          <p>送出後可重新播放書寫過程，觀察每一筆的方向、節奏與停頓位置。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="brief" aria-labelledby="brief-title">
+      <div class="section-head">
+        <div class="section-kicker">Presentation Points</div>
+        <h2 id="brief-title">最後簡報可以說清楚的四個重點</h2>
+        <p class="section-copy">以下內容依照目前程式碼功能與參考資料整理，適合放在專題簡報中說明作品定位。</p>
+      </div>
+      <div class="brief-grid">
+        <article class="brief-card">
+          <h3>動機：幫助學習者看見書寫問題</h3>
+          <p>一般練字多半只看最後寫出來的字，但學習者真正需要知道的是「哪一筆太快、哪裡停頓、筆壓是否不穩、筆順是否正確」。因此我們希望把書寫過程數據化，提供比單純批改更具體的回饋。</p>
+        </article>
+        <article class="brief-card">
+          <h3>客群：中文學習者與教學者</h3>
+          <p>主要使用者包含初學繁體中文的學習者、需要練習筆順的學生，以及想追蹤學生書寫歷程的老師。網站也適合用於語文教學、練字活動與互動展示。</p>
+        </article>
+        <article class="brief-card">
+          <h3>同類工具：有功能，但通常不完整</h3>
+          <p>市面上常見工具多半偏向手寫辨識、筆順動畫或單純畫布輸入；我們的網站把「書寫資料擷取、AI 辨識、筆順回饋、情緒/狀態推算、軌跡重播、CSV 與雲端保存」整合在同一個流程中。</p>
+        </article>
+        <article class="brief-card">
+          <h3>改進方向：身份認證與更多資料</h3>
+          <p>目前仍屬原型階段。未來可加入帳號登入、個人學習歷程、教師管理後台，並擴大資料收集量，讓分析結果能從單次觀察進一步發展成長期追蹤與模型訓練。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="flow" aria-labelledby="flow-title">
+      <div class="section-head">
+        <div class="section-kicker">Workflow</div>
+        <h2 id="flow-title">四個步驟完成一次書寫分析</h2>
+      </div>
+      <div class="flow">
+        <article class="step">
+          <h3>在畫布書寫</h3>
+          <p>使用觸控筆或滑鼠輸入文字，手指觸碰會被忽略，降低誤觸干擾。</p>
+        </article>
+        <article class="step">
+          <h3>即時收集數據</h3>
+          <p>系統同步更新座標、筆壓、傾斜角度與資料點數量。</p>
+        </article>
+        <article class="step">
+          <h3>送出分析</h3>
+          <p>產生統計數據、辨識文字、筆順檢查與情緒推算結果。</p>
+        </article>
+        <article class="step">
+          <h3>保存與回顧</h3>
+          <p>可下載 CSV，並將結果同步到雲端表單，方便後續研究或教學紀錄。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="report" aria-labelledby="report-title">
+      <div class="section-head">
+        <div class="section-kicker">Analysis Report</div>
+        <h2 id="report-title">分析報告把原始軌跡變成可讀洞察</h2>
+        <p class="section-copy">報告區整合文字、筆順、情緒、速度與壓力資訊，讓使用者快速理解這次書寫狀態。</p>
+      </div>
+      <div class="report-layout">
+        <article class="report-card">
+          <h3>報告會呈現什麼？</h3>
+          <ul>
+            <li><span class="check">✓</span><span>手寫內容辨識與字元數統計</span></li>
+            <li><span class="check">✓</span><span>平均筆壓、最大筆壓、平均速度與總資料點</span></li>
+            <li><span class="check">✓</span><span>筆順正確性與具體修正建議</span></li>
+            <li><span class="check">✓</span><span>依據筆壓與速度推算的書寫情緒分布</span></li>
+          </ul>
+        </article>
+        <article class="report-card">
+          <h3>情緒推算示例</h3>
+          <div class="analysis-demo" aria-label="情緒分析示例">
+            <div class="analysis-row"><span>平靜</span><div class="bar"><span style="width: 72%"></span></div><b>72%</b></div>
+            <div class="analysis-row"><span>專注</span><div class="bar"><span style="width: 64%; background: var(--warm)"></span></div><b>64%</b></div>
+            <div class="analysis-row"><span>急迫</span><div class="bar"><span style="width: 31%; background: var(--danger)"></span></div><b>31%</b></div>
+            <div class="analysis-row"><span>疲倦</span><div class="bar"><span style="width: 22%; background: var(--accent)"></span></div><b>22%</b></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="comparison" aria-labelledby="comparison-title">
+      <div class="section-head">
+        <div class="section-kicker">Similar Tools</div>
+        <h2 id="comparison-title">和類似 app / 網站相比，我們整合得更完整</h2>
+        <p class="section-copy">這裡用功能類型比較，不指定單一品牌；簡報時可以依實際展示對象補上具體產品名稱。</p>
+      </div>
+      <div class="comparison">
+        <table>
+          <thead>
+            <tr>
+              <th>類似工具類型</th>
+              <th>常見功能</th>
+              <th>限制</th>
+              <th>本網站補強</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>手寫辨識工具</strong></td>
+              <td>把手寫字轉成文字。</td>
+              <td>通常只重視辨識結果，較少呈現書寫過程。</td>
+              <td>除了辨識，也記錄筆壓、速度、軌跡與時間資料。</td>
+            </tr>
+            <tr>
+              <td><strong>中文筆順練習網站</strong></td>
+              <td>提供標準筆順動畫或描紅練習。</td>
+              <td>多半是示範為主，不一定分析使用者實際書寫資料。</td>
+              <td>結合使用者筆畫順序與 AI 回饋，錯誤時提供動畫修正。</td>
+            </tr>
+            <tr>
+              <td><strong>繪圖 / 白板 app</strong></td>
+              <td>提供畫筆、橡皮擦與畫布。</td>
+              <td>重點是創作，不會分析學習狀態。</td>
+              <td>把畫布輸入轉成可下載、可重播、可保存的學習數據。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="usecases" aria-labelledby="usecases-title">
+      <div class="section-head">
+        <div class="section-kicker">Use Cases</div>
+        <h2 id="usecases-title">適合教學、練字、研究與互動展示</h2>
+      </div>
+      <div class="audience-grid">
+        <article class="audience">
+          <h3>中文書寫教學</h3>
+          <p>協助學生練習筆順與字形，老師也能透過軌跡重播看見錯誤發生的位置。</p>
+        </article>
+        <article class="audience">
+          <h3>學習歷程紀錄</h3>
+          <p>每次書寫都能保存為資料，適合長期追蹤書寫速度、穩定度與進步情形。</p>
+        </article>
+        <article class="audience">
+          <h3>互動資料展示</h3>
+          <p>把抽象的筆壓與情緒推算視覺化，適合做成展示、實驗或專題說明頁。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="references" aria-labelledby="references-title">
+      <div class="section-head">
+        <div class="section-kicker">Reference</div>
+        <h2 id="references-title">程式碼與功能概念主要參考資料</h2>
+        <p class="section-copy">手寫資料分析部分參考 BDALab 的 handwriting-features 專案。該專案將線上手寫資料特徵分成運動、動態、空間、時間與複合特徵；我們目前原型採用其中與瀏覽器觸控筆資料相符的概念，例如座標、時間、速度、筆壓、傾斜與筆畫軌跡。</p>
+      </div>
+      <div class="report-card">
+        <ul>
+          <li><span class="check">✓</span><span>參考資料：<a href="https://github.com/BDALab/handwriting-features?tab=readme-ov-file#Features" target="_blank" rel="noreferrer">BDALab / handwriting-features</a></span></li>
+          <li><span class="check">✓</span><span>對應到本網站：速度、筆壓、軌跡、時間序列、筆畫重播與資料匯出。</span></li>
+          <li><span class="check">✓</span><span>本網站額外加入：AI 手寫辨識、繁體中文字筆順回饋、情緒/狀態推算與 Google Sheet 同步。</span></li>
+          <li><span class="check">✓</span><span>正確性提醒：目前情緒推算屬於規則式推估，適合做學習回饋展示，不應宣稱為醫療或心理診斷。</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <aside class="cta" aria-label="行動呼籲">
+      <div>
+        <h2>讓每一次手寫都留下可分析的痕跡</h2>
+        <p>觸控筆分析網站將書寫行為轉化為數據、回饋與可重播的學習證據，讓文字不只被看見，也能被理解。</p>
+      </div>
+      <a class="button" href="app.html">直接進入作品網站</a>
+    </aside>
+  </main>
+
+  <footer>
+    <span>觸控筆數據分析網站介紹頁 · 為手寫互動、中文學習與資料觀察而設計</span>
+  </footer>
+</body>
+</html>
